@@ -3,6 +3,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --primary-dark-hsl: 200, 100%, 6%;
+    --primary-light-hsl: 200, 100%, 91%
+    --primary-hsl: 200, 100%, 50%
+}
 body{
     margin: 0;
 }
@@ -20,9 +25,19 @@ body{
 }
 
 .login-container{
-    background-color: blue;
+    --color: hsl(var(--primary-dark-hsl), .7);
+    background-color: hsl(var(--primary-dark-hsl), .7);
+    box-shadow:0 0 15px var(--color);
+    padding: 40px 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
 }
 
 .login-title {
     margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: normal;
 }
